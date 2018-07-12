@@ -1,0 +1,121 @@
+<!-- <p>
+  bill-pay works!
+</p> -->
+
+<!-- <p>
+  shopping-mycart works!
+</p> -->
+<div class="container">
+    <div class="row">
+      <div class="col-md-8">
+        <br>
+        <h4>Billing address</h4>
+        
+          <div class="row">
+                    <div class="col-md-6">
+                      <label for="firstName">First Name</label>
+                      <input type="text" class="form-control" id="firstName" required>
+                    </div>
+                  
+                  <div class="col-md-6">
+                      <label for="lastName">Last Name</label>
+                      <input type="text" class="form-control" id="lastName" required>
+                    </div>
+                </div>
+  
+                <div class="row">
+                    <div class="col-md-6">
+                      <label for="email">Email</label>
+                      <input type="text" class="form-control" id="email" required>
+                    </div>
+                  
+                  <div class="col-md-6">
+                      <label for="phone">Phone</label>
+                      <input type="text" class="form-control" id="phone" required>
+                    </div>
+                </div>
+  
+                <div class="row">
+                    <div class="col-md-12">
+                      <label for="address">Address</label>
+                      <input type="text" class="form-control" id="address" required>
+                    </div>	
+              </div>
+  
+                <div class="row">
+                    <div class="col-md-12">
+                      <label for="address1">Address(Optional)</label>
+                      <input type="text" class="form-control" id="address1" required>
+                    </div>
+                </div>
+  
+                               
+                <br>
+                
+                <hr>
+  
+                <div class="custom-control custom-checkbox">
+            <input type="checkbox" class="custom-control-input" id="sameaddress"/>
+            <label class="custom-control-label" for="sameaddress">Shipping address is the same as my billing address</label>
+          </div>
+  
+          <div class="custom-control custom-checkbox">
+            <input type="checkbox" class="custom-control-input" id="saveinfo"/>
+            <label class="custom-control-label" for="saveinfo">Save this information for next time</label>
+          </div>
+  
+          <hr>
+  
+          <h4>Payment Info</h4>
+  
+          <div class="custom-control custom-checkbox">
+            <input type="checkbox" class="custom-control-input" id="creditcard"/>
+            <label class="custom-control-label" for="creditcard">Credit Card</label>
+          </div>
+  
+          <div class="custom-control custom-checkbox">
+            <input type="checkbox" class="custom-control-input" id="debitcard"/>
+            <label class="custom-control-label" for="debitcard">Debit Card</label>
+          </div>
+  
+          <div class="custom-control custom-checkbox">
+            <input type="checkbox" class="custom-control-input" id="netbank"/>
+            <label class="custom-control-label" for="netbank">Net Banking</label>
+          </div>
+  
+          <br>
+  
+          <div class="row">
+                    <div class="col-md-6">
+                      <label for="nameoncard">Name on card</label>
+                      <input type="text" class="form-control" id="nameoncard" required>
+                    </div>
+                  
+                  <div class="col-md-6">
+                      <label for="cardnumber">Credit Card Number</label>
+                      <input type="text" class="form-control" id="cardnumber" required>
+                    </div>
+                </div>
+  
+                <div class="row">
+                    <div class="col-md-4">
+                      <label for="expiration">Expiration</label>
+                      <input type="date" class="form-control" id="expiration" required>
+                    </div>
+                  
+                  <div class="col-md-2">
+                      <label for="cvv">CVV</label>
+                      <input type="text" class="form-control" id="cvv" required>
+                    </div>
+                </div>
+  
+                <hr>
+  
+                <button class="btn btn-primary btn-success" type="submit" routerLink="/order_details">Place Order</button> &nbsp;
+                <button class="btn btn-primary btn-warning" type="submit" routerLink="/viewcart">My Cart </button> &nbsp;
+                <button class="btn btn-primary btn-primary" type="submit" routerLink="/home">Continue Shopping</button>
+
+                <br>
+  
+          </div>    	
+  </div>
