@@ -1,3 +1,16 @@
+# What is this code
+
+This code is for user interface for a fashion website. 
+
+# What are the technologies used
+
+This code is written in Angular JS with Angular CLI
+
+This code is meant to be integrated with the API in the same project (Repo: entheos-api)
+
+# What all the first commit on 7 July 18 has
+
+
 # MyFirstApp
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.0.0.
