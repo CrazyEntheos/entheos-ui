@@ -4,94 +4,17 @@
 <app-side-nav></app-side-nav>
 <div class="col-sm-9">
   <div class="row">
-    <div class="col-md-3 ">
-      <div class="thumbnail">
+    <div class="col-md-3" *ngFor="let product of products">
+      <div class="thumbnail product-thumb">
         <a routerLink="/product_detail">
-          <img src="..\..\assets\images\men-prd-1.jpg" alt="Lights" style="width:100%">
-          <div class="caption">
-            <p>Lorem ipsum...</p>
+          <img src="" alt="Lights" style="width:100%">
+          <div class="product-brand">
+            <p>{{ product.product_name }}</p>
           </div>
         </a>
-      </div>
-    </div>
-
-    <div class="col-md-3">
-      <div class="thumbnail">
-        <a href="#">
-          <img src="..\..\assets\images\men-prd-2.jpg" alt="Nature" style="width:100%">
-          <div class="caption">
-            <p>Lorem ipsum...</p>
-          </div>
-        </a>
-      </div>
-    </div>
-
-    <div class="col-md-3">
-      <div class="thumbnail">
-        <a href="#">
-          <img src="..\..\assets\images\men-prd-3.jpg" alt="Fjords" style="width:100%">
-          <div class="caption">
-            <p>Lorem ipsum...</p>
-          </div>
-        </a>
-      </div>
-    </div>
-
-    <div class="col-md-3">
-      <div class="thumbnail">
-        <a href="#">
-          <img src="..\..\assets\images\men-prd-4.jpg" alt="Fjords" style="width:100%">
-          <div class="caption">
-            <p>Lorem ipsum...</p>
-          </div>
-        </a>
-      </div>
-    </div>
-  </div>
-  <!-- 
-<div class="row"> -->
-  <div class="row">
-    <div class="col-md-3">
-      <div class="thumbnail">
-        <a href="#">
-          <img src="..\..\assets\images\men-prd-5.jpg" alt="Lights" style="width:100%">
-          <div class="caption">
-            <p>Lorem ipsum...</p>
-          </div>
-        </a>
-      </div>
-    </div>
-
-    <div class="col-md-3">
-      <div class="thumbnail">
-        <a href="#">
-          <img src="..\..\assets\images\men-prd-6.jpg" alt="Nature" style="width:100%">
-          <div class="caption">
-            <p>Lorem ipsum...</p>
-          </div>
-        </a>
-      </div>
-    </div>
-
-    <div class="col-md-3">
-      <div class="thumbnail">
-        <a href="#">
-          <img src="..\..\assets\images\men-prd-7.jpg" alt="Fjords" style="width:100%">
-          <div class="caption">
-            <p>Lorem ipsum...</p>
-          </div>
-        </a>
-      </div>
-    </div>
-
-    <div class="col-md-3">
-      <div class="thumbnail">
-        <a href="#">
-          <img src="..\..\assets\images\men-prd-8.jpg" alt="Fjords" style="width:100%">
-          <div class="caption">
-            <p>Lorem ipsum...</p>
-          </div>
-        </a>
+        <p>{{ product.prod_desc }}</p>
+        <p>Rs. {{ product.prod_price }}</p>
+        <p>Size: {{ product.prod_size }}</p>
       </div>
     </div>
   </div>
