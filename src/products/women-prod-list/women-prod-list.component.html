@@ -7,13 +7,13 @@
     <div class="col-md-3" *ngFor="let product of products">
       <div class="thumbnail product-thumb">
         <a routerLink="/product_detail">
-          <img src="" alt="Lights" style="width:100%">
+          <img src="http://www.planetayurveda.com/media/catalog/product/i/m/image-not-available-store.png" alt="Lights" style="width:100%">
           <div class="product-brand">
             <p>{{ product.product_name }}</p>
           </div>
         </a>
         <p>{{ product.prod_desc }}</p>
-        <p>Rs. {{ product.prod_price }}</p>
+        <p>₹ {{ product.prod_price }}</p>
         <p>Size: {{ product.prod_size }}</p>
       </div>
     </div>

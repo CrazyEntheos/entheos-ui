@@ -6,7 +6,6 @@ import { KidsProdListComponent } from '../products/kids-prod-list/kids-prod-list
 import { HomeMainComponent } from '../home/home-main/home-main.component';
 import { ProductDetailComponent } from '../products/product-detail/product-detail.component';
 import { LoginSignupComponent } from '../login/login-signup/login-signup.component';
-import { ShoppingMycartComponent } from '../checkout/shopping-mycart/shopping-mycart.component';
 import { OrderPlacedComponent } from '../checkout/order-placed/order-placed.component';
 import { BillPayComponent } from '../checkout/bill-pay/bill-pay.component';
 
@@ -19,7 +18,6 @@ const routes: Routes = [
     { path: 'product_detail', component: ProductDetailComponent }, 
     // { path: 'signup', component: LoginSignupComponent },
     { path: 'login', component: LoginSignupComponent },
-    { path: 'viewcart', component: ShoppingMycartComponent },
     { path: 'bill_pay', component: BillPayComponent },
     { path: 'order_details', component: OrderPlacedComponent },
 

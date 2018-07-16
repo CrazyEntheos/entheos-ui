@@ -18,7 +18,6 @@ import { HomeMainComponent } from '../home/home-main/home-main.component';
 import { FooterComponent } from '../home/footer/footer.component';
 import { ProductDetailComponent } from '../products/product-detail/product-detail.component';
 import { LoginSignupComponent } from '../login/login-signup/login-signup.component';
-import { ShoppingMycartComponent } from '../checkout/shopping-mycart/shopping-mycart.component';
 import { OrderPlacedComponent } from '../checkout/order-placed/order-placed.component';
 import { BillPayComponent } from '../checkout/bill-pay/bill-pay.component';
 
@@ -36,8 +35,6 @@ import { BillPayComponent } from '../checkout/bill-pay/bill-pay.component';
     FooterComponent,
     ProductDetailComponent,
     LoginSignupComponent,
-    ShoppingMycartComponent,
-    ShoppingMycartComponent,
     OrderPlacedComponent,
     BillPayComponent,
   ],
