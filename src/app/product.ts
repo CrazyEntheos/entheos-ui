@@ -1,7 +1,10 @@
+import {  } from "angular-in-memory-web-api";
+
 export class Product {
     product_id: number;
+    product_img: string;
     product_name: string;
-    prod_desc: string;
-    prod_price: number;
-    prod_size: string;
+    product_desc: string;
+    product_price: number;
+    product_size: string;
 }

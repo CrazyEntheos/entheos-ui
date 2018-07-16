@@ -16,6 +16,7 @@ const routes: Routes = [
     { path: 'womens', component: WomenProdListComponent },
     { path: 'kids', component: KidsProdListComponent },
     { path: 'product_detail', component: ProductDetailComponent }, 
+    { path: 'product_detail/:product_id', component: ProductDetailComponent }, 
     // { path: 'signup', component: LoginSignupComponent },
     { path: 'login', component: LoginSignupComponent },
     { path: 'bill_pay', component: BillPayComponent },

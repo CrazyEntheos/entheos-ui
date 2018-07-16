@@ -13,38 +13,43 @@ export class WomenProdListComponent implements OnInit {
   products: Product[] = [
     {
       product_id: 1,
+      product_img: 'http://www.planetayurveda.com/media/catalog/product/i/m/image-not-available-store.png',
       product_name: 'W Ethnics',
-      prod_desc: 'W Women Orange & Beige Printed Straight Kurta',
-      prod_price: 1250,
-      prod_size: 'M'
+      product_desc: 'W Women Orange & Beige Printed Straight Kurta',
+      product_price: 1250,
+      product_size: 'M'
     },
     {
       product_id: 2,
+      product_img: 'http://www.planetayurveda.com/media/catalog/product/i/m/image-not-available-store.png',
       product_name: 'BIBA Women’s Ethnic Wear',
-      prod_desc: 'Biba Women Green Solid Kurta with Churidar & Dupatta',
-      prod_price: 2400,
-      prod_size: 'L'
+      product_desc: 'Biba Women Green Solid Kurta with Churidar & Dupatta',
+      product_price: 2400,
+      product_size: 'L'
     },
     {
       product_id: 3,
+      product_img: 'http://www.planetayurveda.com/media/catalog/product/i/m/image-not-available-store.png',
       product_name: 'AKS Dress',
-      prod_desc: 'AKS Women Green & White Printed Maxi Dress',
-      prod_price: 1125,
-      prod_size: 'XS'
+      product_desc: 'AKS Women Green & White Printed Maxi Dress',
+      product_price: 1125,
+      product_size: 'XS'
     },
     {
       product_id: 4,
+      product_img: 'http://www.planetayurveda.com/media/catalog/product/i/m/image-not-available-store.png',
       product_name: 'HERE&NOW Top',
-      prod_desc: 'HERE&NOW Women Black Lightweight Floral Print Cold Shoulder Top',
-      prod_price: 3056,
-      prod_size: 'M'
+      product_desc: 'HERE&NOW Women Black Lightweight Floral Print Cold Shoulder Top',
+      product_price: 3056,
+      product_size: 'M'
     },
     {
       product_id: 5,
+      product_img: 'http://www.planetayurveda.com/media/catalog/product/i/m/image-not-available-store.png',
       product_name: 'W For Women',
-      prod_desc: 'W Women Turquoise Blue & Coral Orange Printed Straight Kurta',
-      prod_price: 1455,
-      prod_size: 'XL'
+      product_desc: 'W Women Turquoise Blue & Coral Orange Printed Straight Kurta',
+      product_price: 1455,
+      product_size: 'XL'
     },
   ];
 
