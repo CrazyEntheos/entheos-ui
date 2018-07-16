@@ -15,6 +15,9 @@
         <p>{{ product.product_desc }}</p>
         <p>₹ {{ product.product_price }}</p>
         <p>Size: {{ product.product_size }}</p>
+        <button type="button" class="btn btn-primary" routerLink="/product_detail/{{ product.product_id }}">
+          <span class="glyphicon glyphicon-plus-sign"></span> Add to cart
+        </button>
       </div>
     </div>
   </div>

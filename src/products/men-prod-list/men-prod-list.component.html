@@ -6,7 +6,7 @@
   <div class="row">
     <div class="col-md-3" *ngFor="let product of products">
       <div class="thumbnail product-thumb">
-        <a routerLink="/product_detail/{{ product.product_id }}">
+        <a>
           <img src="{{ product.product_img }}" alt="Lights" style="width:100%">
           <div class="product-brand">
             <p>{{ product.product_name }}</p>
@@ -15,7 +15,10 @@
         <p>{{ product.product_desc }}</p>
         <p>₹ {{ product.product_price }}</p>
         <p>Size: {{ product.product_size }}</p>
+        <button type="button" class="btn btn-primary" routerLink="/product_detail/{{ product.product_id }}">
+          <span class="glyphicon glyphicon-plus-sign"></span> Add to cart
+        </button>
       </div>
     </div>
-  </div>  
+  </div>
 </div>
