@@ -6,15 +6,18 @@
   <div class="row">
     <div class="col-md-3" *ngFor="let product of products">
       <div class="thumbnail product-thumb">
-        <a routerLink="/product_detail">
-          <img src="http://www.planetayurveda.com/media/catalog/product/i/m/image-not-available-store.png" alt="Lights" style="width:100%">
+        <a routerLink="/product_detail/{{ product.product_id }}">
+          <img src="{{ product.product_img }}" alt="Lights" style="width:100%">
           <div class="product-brand">
             <p>{{ product.product_name }}</p>
           </div>
         </a>
-        <p>{{ product.prod_desc }}</p>
-        <p>₹ {{ product.prod_price }}</p>
-        <p>Size: {{ product.prod_size }}</p>
+        <p>{{ product.product_desc }}</p>
+        <p>₹ {{ product.product_price }}</p>
+        <p>Size: {{ product.product_size }}</p>
+        <button type="button" class="btn btn-primary" routerLink="/product_detail/{{ product.product_id }}">
+          <span class="glyphicon glyphicon-plus-sign"></span> Add to cart
+        </button>
       </div>
     </div>
   </div>
