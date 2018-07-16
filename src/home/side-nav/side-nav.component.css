@@ -12,9 +12,14 @@
         padding-top: 20px;
         background-color: #f1f1f1;
         height: 100%;
+        font: black;
       }
 
       .header-label {
         text-transform: uppercase !important;
-  
+        text-align: center;
+        font-size: 17px !important;
     }
+li:hover {
+    background-color:#f1f1f1;
+}

@@ -1,5 +1,9 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { HttpClientModule } from '@angular/common/http';
+import { HttpClientInMemoryWebApiModule } from 'angular-in-memory-web-api';
+import { InMemoryDataService }  from './in-memory-data.service';
+
 
 import { AppComponent } from './app.component';
 import { TopNavComponent } from '../home/top-nav/top-nav.component';
@@ -14,7 +18,6 @@ import { HomeMainComponent } from '../home/home-main/home-main.component';
 import { FooterComponent } from '../home/footer/footer.component';
 import { ProductDetailComponent } from '../products/product-detail/product-detail.component';
 import { LoginSignupComponent } from '../login/login-signup/login-signup.component';
-import { ShoppingMycartComponent } from '../checkout/shopping-mycart/shopping-mycart.component';
 import { OrderPlacedComponent } from '../checkout/order-placed/order-placed.component';
 import { BillPayComponent } from '../checkout/bill-pay/bill-pay.component';
 
@@ -32,14 +35,16 @@ import { BillPayComponent } from '../checkout/bill-pay/bill-pay.component';
     FooterComponent,
     ProductDetailComponent,
     LoginSignupComponent,
-    ShoppingMycartComponent,
-    ShoppingMycartComponent,
     OrderPlacedComponent,
     BillPayComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
+    HttpClientModule,
+    HttpClientInMemoryWebApiModule.forRoot(
+      InMemoryDataService, { dataEncapsulation: false }
+    )
   ],
   providers: [],
   bootstrap: [AppComponent]
