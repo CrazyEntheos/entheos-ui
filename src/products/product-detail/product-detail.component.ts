@@ -17,7 +17,6 @@ export class ProductDetailComponent implements OnInit {
   ) { }
 
   ngOnInit() {
-    
     this.sub = this.route.params.subscribe(
       (params)=> {
         console.log(params['product_id']);        
@@ -35,5 +34,4 @@ export class ProductDetailComponent implements OnInit {
         console.log(this.proddetail.productName);
       });
   }
-
 }

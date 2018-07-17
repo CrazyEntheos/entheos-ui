@@ -10,6 +10,7 @@ import { TopNavComponent } from '../home/top-nav/top-nav.component';
 import { SideNavComponent } from '../home/side-nav/side-nav.component';
 import { HomeSliderComponent } from '../home/home-slider/home-slider.component';
 import { ProductsComponent } from '../products/products.component';
+import { AllProdListComponent } from '../products/all-prod-list/all-prod-list.component';
 import { MenProdListComponent } from '../products/men-prod-list/men-prod-list.component';
 import { WomenProdListComponent } from '../products/women-prod-list/women-prod-list.component';
 import { KidsProdListComponent } from '../products/kids-prod-list/kids-prod-list.component'
@@ -28,6 +29,7 @@ import { BillPayComponent } from '../checkout/bill-pay/bill-pay.component';
     SideNavComponent,
     HomeSliderComponent,
     ProductsComponent,
+    AllProdListComponent,
     MenProdListComponent,
     WomenProdListComponent,
     KidsProdListComponent,
