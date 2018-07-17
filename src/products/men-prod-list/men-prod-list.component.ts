@@ -11,10 +11,10 @@ import { ProductService } from '../../app/products.service';
   styleUrls: ['./men-prod-list.component.css']
 })
 export class MenProdListComponent implements OnInit {
-
-  products: Product[] = [
+    productList: any = [];
+  /* products: Product[] = [
     {
-      product_id: 1,
+      product_id: 101001101,
       product_img: 'http://www.planetayurveda.com/media/catalog/product/i/m/image-not-available-store.png',
       product_name: 'UCB Mens Cotton T-Shirt',
       product_desc: 'Black Round Neck Full Sleeve T-Shirt',
@@ -52,8 +52,8 @@ export class MenProdListComponent implements OnInit {
       product_desc: 'Puma Mens Cotton Polo',
       product_price: 719,
       product_size: 'S'
-    },
-  ];
+    }, 
+  ];*/
 
   constructor(
     private route: ActivatedRoute, private productService: ProductService
@@ -65,11 +65,11 @@ export class MenProdListComponent implements OnInit {
 
   getProducts(): void {
     this.productService.getProducts()
-    .subscribe(function(products){
-      // console.log(products);
-      this.products = products;
-      // console.log(this.products);
-    });
+    .subscribe(
+      (products) => {
+        this.productList = products.json();
+        //this.showproddetail= 'true';      
+        
+      });
   }
-
 }

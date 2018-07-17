@@ -3,7 +3,7 @@ import { NgModule } from '@angular/core';
 import { HttpClientModule } from '@angular/common/http';
 import { HttpClientInMemoryWebApiModule } from 'angular-in-memory-web-api';
 import { InMemoryDataService }  from './in-memory-data.service';
-
+import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
 import { TopNavComponent } from '../home/top-nav/top-nav.component';
@@ -41,6 +41,7 @@ import { BillPayComponent } from '../checkout/bill-pay/bill-pay.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
+    HttpModule,
     HttpClientModule,
     HttpClientInMemoryWebApiModule.forRoot(
       InMemoryDataService, { dataEncapsulation: false }
