@@ -11,65 +11,26 @@ import { ProductService } from '../../app/products.service';
   styleUrls: ['./men-prod-list.component.css']
 })
 export class MenProdListComponent implements OnInit {
-
-  products: Product[] = [
-    {
-      product_id: 1,
-      product_img: 'http://www.planetayurveda.com/media/catalog/product/i/m/image-not-available-store.png',
-      product_name: 'UCB Mens Cotton T-Shirt',
-      product_desc: 'Black Round Neck Full Sleeve T-Shirt',
-      product_price: 1500,
-      product_size: 'L'
-    },
-    {
-      product_id: 2,
-      product_img: 'http://www.planetayurveda.com/media/catalog/product/i/m/image-not-available-store.png',
-      product_name: 'U.S. Polo Assn. Cotton Polo',
-      product_desc: 'U.S. Polo Assn. Mens Solid Regular Fit Cotton Polo',
-      product_price: 1345,
-      product_size: 'XL'
-    },
-    {
-      product_id: 3,
-      product_img: 'http://www.planetayurveda.com/media/catalog/product/i/m/image-not-available-store.png',
-      product_name: 'WROGN T-shirt',
-      product_desc: 'WROGN Men Grey & Rust Brown Striped Polo Collar T-shirt',
-      product_price: 3000,
-      product_size: 'XL'
-    },
-    {
-      product_id: 4,
-      product_name: 'United Colors of Benetton Men',
-      product_img: 'http://www.planetayurveda.com/media/catalog/product/i/m/image-not-available-store.png',
-      product_desc: 'United Colors of Benetton Men Beige & Blue Striped Polo Collar T-shirt',
-      product_price: 1745,
-      product_size: 'M'
-    },
-    {
-      product_id: 5,
-      product_img: 'http://www.planetayurveda.com/media/catalog/product/i/m/image-not-available-store.png',
-      product_name: 'Puma T-shirt',
-      product_desc: 'Puma Mens Cotton Polo',
-      product_price: 719,
-      product_size: 'S'
-    },
-  ];
-
+  sub: any;
+  productList: any = [];
   constructor(
-    private route: ActivatedRoute, private productService: ProductService
+    private route: ActivatedRoute, 
+    private productService: ProductService,
   ) { }
 
   ngOnInit() {
-    this.getProducts();
+    this.sub = this.route.params.subscribe(
+      (params)=> {
+        console.log(params['category_id']);        
+        this.getProductsByCategory(params['category_id']);
+      }
+    )
   }
-
-  getProducts(): void {
-    this.productService.getProducts()
-    .subscribe(function(products){
-      // console.log(products);
-      this.products = products;
-      // console.log(this.products);
-    });
+  getProductsByCategory(categeoryId): void {
+    this.productService.getProductsByCategory(categeoryId)
+    .subscribe(
+      (products) => {
+        this.productList = products.json();
+      });
   }
-
 }

@@ -10,3 +10,6 @@
     font-family: Roboto, Arial, sans-serif;
     letter-spacing: 0;
 }
+.p-class {
+    margin: 0 0 2px!important;
+}

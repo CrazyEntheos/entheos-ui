@@ -33,10 +33,9 @@
 
       </tr>
       <!-- cart items -->
-      <tr class="">
-        <td>
-          UCB Mens Cotton T-Shirt - Black Round Neck Full Sleeve T-Shirt 
-          <!-- {{ product.product_name }} -{{ product.product_desc }} -->
+      <tr>
+        <td >
+          <span>{{proddetail.productName}} - {{proddetail.description}}</span>
         </td>
         <td class="text-center">
           <select class="form-control">
@@ -47,13 +46,14 @@
             <option value="4">5</option>
           </select>
         </td>
-        <td class="text-center">
-          XL
-          <!-- {{ product.product_size }}  -->
+        <!-- <p ">
+          {{size}}
+        </p> -->
+        <td class="text-center" *ngFor="let size of proddetail.size">
+              {{ size }}
         </td>
         <td class="text-right">
-          ₹ 1356
-          <!-- {{ product.product_price }} -->
+          ₹ {{proddetail.price}}        
         </td>
 
         <td>
@@ -68,7 +68,7 @@
       <!-- footer -->
       <tr>
         <td align="right" colspan="5">
-          Amount Payable <span class="space"></span>₹ 12345
+          <b>Amount Payable</b> <span class="space"></span> ₹ {{proddetail.price}} 
            <!-- {{ product.product_price }} -->
         </td>
       </tr>

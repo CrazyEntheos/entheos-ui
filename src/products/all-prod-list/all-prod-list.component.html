@@ -1,5 +1,5 @@
 <!-- <p>
-  men-prod-list works!
+  all-prod-list works!
 </p> -->
 <app-side-nav></app-side-nav>
 <div class="col-sm-9">
@@ -12,9 +12,9 @@
             <p>{{ product.productName }}</p>
           </div>
         </a>
-        <p class="p-class">{{ product.description }}</p>
-        <p class="p-class">₹ {{ product.price }}</p>
-        <p class="p-class">Size: {{ product.size }}</p>
+        <p>{{ product.description }}</p>
+        <p>₹ {{ product.price }}</p>
+        <p>Size: {{ product.size }}</p>
         <button type="button" class="btn btn-primary" routerLink="/product_detail/{{ product.productId }}">
           <span class="glyphicon glyphicon-plus-sign"></span> Add to cart
         </button>

@@ -8,22 +8,30 @@ import { ProductService } from '../../app/products.service';
   styleUrls: ['./product-detail.component.css']
 })
 export class ProductDetailComponent implements OnInit {
+  sub: any;
+  proddetail: any = [];
+  showproddetail = 'blah';
   constructor(
     private route: ActivatedRoute, 
     private productService: ProductService,
   ) { }
 
   ngOnInit() {
-    this.getProducts();
+    this.sub = this.route.params.subscribe(
+      (params)=> {
+        console.log(params['product_id']);        
+        this.getProducts(params['product_id']);
+      }
+    )
   }
 
-  getProducts(): void {
-    this.productService.getProducts()
-    .subscribe(function(products){
-      // console.log(products);
-      this.products = products;
-      // console.log(this.products);
-    });
+  getProducts(prodid): void {
+    this.productService.getProduct(prodid)
+    .subscribe(
+      (products) => {
+        this.proddetail = products.json();
+        this.showproddetail= 'true';      
+        console.log(this.proddetail.productName);
+      });
   }
-
 }
