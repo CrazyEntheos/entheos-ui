@@ -19,6 +19,7 @@ export class OrderPlacedComponent implements OnInit {
   order: Order;
   orderlineitems: OrderLineItem[]= [];
   orderlineitem: OrderLineItem;
+  orderId: string;
   totalValue = 0;
   constructor(
     private route: ActivatedRoute, 
@@ -40,7 +41,7 @@ export class OrderPlacedComponent implements OnInit {
 	       	{
 	            productId:this.productList[i].productId,
 	            quantity:1,
-	            size: this.productList[i].size[0];
+	            size: this.productList[i].size[0]
 	         }
 	   		this.orderlineitems.push(this.orderlineitem);
 	    }
@@ -56,6 +57,10 @@ export class OrderPlacedComponent implements OnInit {
   postYourOrder(order:Order){
   	 this.productService.postOrders(order).subscribe(
   		(order) => {
+  			localStorage.clear();
+  			this.orderId = this.order.orderId;
+  			//alert(this.orderId);
+  			//alert(this.order);
   			alert(order);
   		}
   	);

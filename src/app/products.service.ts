@@ -49,7 +49,7 @@ export class ProductService {
   postOrders(order:Order): Observable<any> {
     const headers = new Headers({ 'Content-Type': 'application/json' });
     alert(JSON.stringify(order));
-    alert(this.url+"/orders");
+    //alert(this.url+"/orders");
     return this.http.post(this.url+"/orders", order, {headers: headers});
   }
   
