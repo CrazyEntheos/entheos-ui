@@ -16,39 +16,49 @@ export class OrderPlacedComponent implements OnInit {
   proddetail: any = [];
   productList: any = [];
   showproddetail = 'blah';
-  order:Order;
+  order: Order;
+  orderlineitems: OrderLineItem[]= [];
+  orderlineitem: OrderLineItem;
   totalValue = 0;
   constructor(
     private route: ActivatedRoute, 
     private productService: ProductService,
-  ) { }
+  ) {}
 
   ngOnInit() {
    this.getLocalProducts();
+   this.productList = this.getCartProducts();
   }
   
   getLocalProducts(): void {
-  alert("orders");
-  	this.postYourOrder(this.order);
     this.productService.getProducts().subscribe(
       (products) => {
-	    this.productList = this.getCartProducts();
-	    this.totalValue = this.getCartProductsValue();
-	    this.getCartProductsCount(); 
-	    this.order['orderId'] = '1234567890';
-        this.order.totalAmount=this.totalValue;
-	    this.order.orderLineItems = this.productList.items.map((product)=> {
-          return {
-            productId:product.productId,
-            quantity:1,
-            size: product.size };
-       });
+		this.productList = this.getCartProducts();
+		this.totalValue = this.getCartProductsValue();
+	    for (let i = 0; i < this.productList.length; i++) {
+	   		this.orderlineitem = 
+	       	{
+	            productId:this.productList[i].productId,
+	            quantity:1,
+	            size: this.productList[i].size[0];
+	         }
+	   		this.orderlineitems.push(this.orderlineitem);
+	    }
+       this.order = {
+       	orderId: Math.floor(100000000 + Math.random() * 900000000).toString(),
+       	totalAmount: this.totalValue,
+       	orderLineItems: this.orderlineitems
+       }
        this.postYourOrder(this.order);
       });
   }
   
   postYourOrder(order:Order){
-  	return this.productService.postOrders(order);
+  	 this.productService.postOrders(order).subscribe(
+  		(order) => {
+  			alert(order);
+  		}
+  	);
   }
   
   getCartProductsValue(){
@@ -61,5 +71,4 @@ export class OrderPlacedComponent implements OnInit {
   getCartProductsCount(){
   	return this.productService.calculateLocalCartProdCounts();
   }
-
 }
