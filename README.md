@@ -1,20 +1,48 @@
 # What is this code
 
-This code is for user interface for a fashion website. 
+This code is to develop a user interface for a fashion website to sell clothes. 
 
 # What are the technologies used
 
-This code is written in Angular JS with Angular CLI
+This code is written in Angular JS with Angular CLI. Angular version is 6. 
+HTML , Bootstrap , CSS 
 
-This code is meant to be integrated with the API in the same project (Repo: entheos-api)
+This code is meant to be integrated with the API repo in the same project (Repo name: entheos-api)
 
-# What all the first commit on 7 July 18 has
+# What all features the current release has
 
 
-# MyFirstApp
+Home page with a slide show briefing about the running deals User can navigate to different pages on the site from Home page UI with Products List for each category with data - Photo , Product name, Description, Price and Size User can switch between different categories Select and Add the products to the cart User can checkout the order
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.0.0.
 
+# FashionPeaks
+
+Home page with a slide show briefing about the running deals 
+User can navigate to different pages on the site from Home page
+UI with Products List for each category with data - Photo , Product name, Description, Price and Size
+User can switch between different categories
+Select and Add the products to the cart
+User can checkout the order
+
+# Functionalities Expected
+
+
+
+1. CRUD operations
+    Get Products list
+    Get details for individual/selected product
+2. Add multiple Products from different catagories to the cart
+3. Check out
+
+# How to get this environment configured
+
+1.	Angular CLI
+  	  Download Angular CLI :https://github.com/angular/angular-cli
+2.	NodeJs
+      Download Nodejs : https://nodejs.org/en/download/
+3.	Package Manager - NPM
+
+   
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
