@@ -1,6 +1,6 @@
 # What is this code
 
-This code is to develop a user interface for a fashion website to sells clothes. 
+This code is to develop a user interface for a fashion website to sell clothes. 
 
 # What are the technologies used
 
@@ -19,11 +19,11 @@ User can checkout the order
 
 # Functionalities Expected
 
-1. Login
-2. CRUD operations
+
+1. CRUD operations
     Get Products list
     Get details for individual/selected product
-    Add Product to the cart
+2. Add multiple Products from different catagories to the cart
 3. Check out
 
 # How to get this environment configured
