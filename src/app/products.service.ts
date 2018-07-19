@@ -17,7 +17,7 @@ import { MessageService } from './message.service';
 export class ProductService {
 
   private productsUrl = 'api/products';  // URL to web api
-  url = 'http://localhost:9080/fashion/api';
+  url = 'https://api-yaminikanthch.c9users.io/service/';
   //http://localhost:9080/fashion/api/categories/5000001
   //http://localhost:9080/fashion/api/categories/5000001/products
   //http://localhost:9080/fashion/api/orders
