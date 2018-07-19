@@ -61,6 +61,8 @@ export class OrderPlacedComponent implements OnInit {
   			this.orderId = this.order.orderId;
   			//alert(this.orderId);
   			//alert(this.order);
+  			//this.productService.navbarCartCount = 0;
+  			this.productService.calculateLocalCartProdCounts();
   			alert(order);
   		}
   	);
