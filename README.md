@@ -9,9 +9,13 @@ HTML , Bootstrap , CSS
 
 This code is meant to be integrated with the API repo in the same project (Repo name: entheos-api)
 
-# What all the first commit on 7 July 18 has
-Home page with a slide show and Categories list - Men , Woman , Kids
-UI with Products List for each category with dummy data
+# What all features the current release has
+Home page with a slide show briefing about the running deals 
+User can navigate to different pages on the site from Home page
+UI with Products List for each category with data - Photo , Product name, Description, Price and Size
+User can switch between different categories
+Select and Add the products to the cart
+User can checkout the order
 
 # Functionalities Expected
 
