@@ -1,7 +1,13 @@
 <nav class="navbar navbar-inverse">
     <div class="container-fluid">
       <div class="navbar-header">
-        <a class="navbar-brand" routerLink="/home" style="font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; size: 35px; color: tomato">Fasion Peaks</a>
+          <div class="navbar-brand">
+              <a class="navbar-item">
+                <img src="assets/images/fp.jpg">
+              </a>
+            </div>
+        <a class="navbar-brand" routerLink="/home">FashionPeaks</a>
+        
       </div>
       <ul class="nav navbar-nav">
         <!-- <li class="active"><a href="#">Home</a></li> -->
@@ -13,12 +19,10 @@
       </ul>
       <ul class="nav navbar-nav navbar-right">
           <li><a href="javascript:;;" [routerLink]="['/product_detail']"><span class="glyphicon glyphicon-shopping-cart">({{productService.navbarCartCount}})</span> My Cart</a></li>
-          <li><a><span class="glyphicon glyphicon-user"></span> Demo User</a></li>
-          <!-- <li>
-            <!-- <button type="button" class="btn btn-info btn-md" data-toggle="modal" data-target="#myModal" routerLink="/login"><span class="glyphicon glyphicon-user"></span>Login</button> -->
-
+          <li>
+            <button type="button" class="btn btn-info btn-md" data-toggle="modal" data-target="#myModal" routerLink="/login"><span class="glyphicon glyphicon-user"></span>Login</button>
             <!-- <a data-toggle="modal" data-target="#myModal" routerLink="/login">Open Modal</a> -->
-          <!-- </li> --> 
+          </li>
         <!-- <li><a routerLink="/signup"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li> -->
       </ul>
     </div>

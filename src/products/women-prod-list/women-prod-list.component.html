@@ -13,11 +13,8 @@
           </div>
         </a>
         <p class="p-class">{{ product.description }}</p>
-        <p class="p-class">₹ {{ product.price }}</p>
-        <p class="p-class">Size: {{ product.size }}</p>
-        <button type="button" class="btn btn-primary" routerLink="/product_detail/{{ product.productId }}">
-          <span class="glyphicon glyphicon-plus-sign"></span> Add to cart
-        </button>
+        <span class="l-class">₹{{ product.price }}</span>
+        <span class="r-class">Size:{{ product.size }}</span>
         <button type="button" class="btn btn-primary" routerLink="/product_detail/{{ product.productId }}">
           <span class="glyphicon glyphicon-plus-sign"></span> Add to cart
         </button>

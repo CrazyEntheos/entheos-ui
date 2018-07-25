@@ -1,5 +1,5 @@
 .product-thumb {
-    padding: 4px 43px;
+    padding: 25px 15px;
     display: inline-block;
     vertical-align: top;
     width: 100%;
@@ -9,8 +9,4 @@
     box-sizing: border-box;
     font-family: Roboto, Arial, sans-serif;
     letter-spacing: 0;
-}
-
-.p-class {
-    margin: 0 0 2px!important;
 }
