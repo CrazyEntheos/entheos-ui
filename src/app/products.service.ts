@@ -9,6 +9,8 @@ import { OrderLineItem } from './orderlineitem';
 import { Order } from './order';
 import { MessageService } from './message.service';
 
+import {environment} from '../environments/environment'
+
 /* const httpOptions = {
   headers: new HttpHeaders({ 'Content-Type': 'application/json' })
 }; */
@@ -17,10 +19,7 @@ import { MessageService } from './message.service';
 export class ProductService {
 
   private productsUrl = 'api/products';  // URL to web api
-  url = 'https://api-yaminikanthch.c9users.io/service/';
-  //http://localhost:9080/fashion/api/categories/5000001
-  //http://localhost:9080/fashion/api/categories/5000001/products
-  //http://localhost:9080/fashion/api/orders
+  url = environment.apiUrl;
   products: any = [];
   totalValue: number = 0;
   navbarCartCount = 0;
