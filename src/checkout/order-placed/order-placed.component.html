@@ -1,14 +1,36 @@
 <!-- <p>
   order-placed works!
 </p> -->
+<div class="container">
+  <div class="row">
+    <p class="meta-info">
+      Hi Customer, Order successfully placed. We are pleased to confirm your order no
+      <B>
+        <span>{{orderId}}</span>
+      </B>. Thank you for shopping with us!
+    </p>
 
+  </div>
+  <hr>
+  <div class="row">
+    <h5>
+      <b>Terms and conditions</b>
+    </h5>
+    <p class="meta-info"> Tax: Applicable tax on the basis of exact location & discount will be charged at the time of checkout</p>
 
-<p>
-    Hi Customer,
+    <p class="meta-info"> 100% Original Products</p>
 
-    Order successfully placed.
-    
-    We are pleased to confirm your order no <B><span>{{orderId}}</span></B>. 
-    Thank you for shopping with us!
-</p>
-<button class="btn btn-primary btn-primaryk" type="submit" routerLink="/home">Continue Shopping</button>
+    <p class="meta-info"> Free Delivery on order above Rs. 1149</p>
+    <p class="meta-info"> Cash on delivery might be available</p>
+
+    <p class="meta-info"> Easy 30 days returns & 30 days exchanges</p>
+
+    <p class="meta-info"> Try & Buy might be available</p>
+
+  </div>
+  <br>
+  <br>
+  <button class="btn btn-primary btn-primaryk" type="submit" routerLink="/home">Continue Shopping</button>
+  <br>
+  <br>
+</div>
