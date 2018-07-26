@@ -1,12 +1,7 @@
-.product-thumb {
-    padding: 25px 15px;
-    display: inline-block;
-    vertical-align: top;
-    width: 100%;
-    width: 250px;
-    height: 450px;
-    text-align: center;
-    box-sizing: border-box;
-    font-family: Roboto, Arial, sans-serif;
-    letter-spacing: 0;
-}
+.wrap-text { 
+    text-overflow: ellipsis;
+    overflow: hidden; 
+    width: 160px; 
+    height: 1.2em; 
+    white-space: nowrap;
+  }

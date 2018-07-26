@@ -4,21 +4,50 @@
 <app-side-nav></app-side-nav>
 <div class="col-sm-9">
   <div class="row">
-    <div class="col-md-3" *ngFor="let product of productList">
-      <div class="thumbnail product-thumb">
+    <div class="col-md-3" *ngFor="let product of productList" style="height: 550px; width: 30%;">
+      <div class="thumbnail">
         <a>
-          <img src="../../assets/images/{{product.productId}}.jpg" alt="Lights" style="width:100%">
-          <div class="product-brand">
-            <p>{{ product.productName }}</p>
-          </div>
+          <img src="../../assets/images/{{product.productId}}.jpg" alt="Lights">
         </a>
-        <p>{{ product.description }}</p>
-        <p>₹ {{ product.price }}</p>
-        <p>Size: {{ product.size }}</p>
-        <button type="button" class="btn btn-primary" routerLink="/product_detail/{{ product.productId }}">
+          <div class="caption">
+            <p class="wrap-text" style="color: blue"><b>{{ product.productName }}</b></p>
+            <p class="wrap-text">{{ product.description }}</p>
+            <p class="wrap-text">₹ {{ product.price }}</p>
+            <p class="wrap-text">Size: {{ product.size }}</p>
+          </div>
+        
+        <div class="text-center">
+        <button type="button" class="btn btn-sm btn-primary" routerLink="/product_detail/{{ product.productId }}">
           <span class="glyphicon glyphicon-plus-sign"></span> Add to cart
         </button>
+      </div>
       </div>
     </div>
   </div>
 </div>
+<!-- 
+<div class="col-sm-9">
+    <div class="row">
+      <ul class="thumbnails">
+        <li class="col-sm-3" *ngFor="let product of productList">
+          <div class="fff">
+            <div class="thumbnail">
+              <a href="#">
+                <img src="../../assets/images/{{product.productId}}.jpg" alt="">
+              </a>
+            </div>
+            <div class="caption">
+              <h5>{{ product.productName }}</h5>
+              <p>{{ product.description }}</p>
+              <p>₹ {{ product.price }}</p>
+              <p>Size: {{ product.size }}</p>
+              <button type="button" class="btn btn-sm btn-primary" routerLink="/product_detail/{{ product.productId }}" >
+                <span class="glyphicon glyphicon-plus-sign"></span> Add to cart
+              </button>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div> -->
+  
