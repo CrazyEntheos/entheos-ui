@@ -9,8 +9,6 @@ import { OrderLineItem } from './orderlineitem';
 import { Order } from './order';
 import { MessageService } from './message.service';
 
-import {environment} from '../environments/environment'
-
 /* const httpOptions = {
   headers: new HttpHeaders({ 'Content-Type': 'application/json' })
 }; */
@@ -19,7 +17,10 @@ import {environment} from '../environments/environment'
 export class ProductService {
 
   private productsUrl = 'api/products';  // URL to web api
-  url = environment.apiUrl;
+  url = 'http://localhost:9080/fashion/api';
+  //http://localhost:9080/fashion/api/categories/5000001
+  //http://localhost:9080/fashion/api/categories/5000001/products
+  //http://localhost:9080/fashion/api/orders
   products: any = [];
   totalValue: number = 0;
   navbarCartCount = 0;

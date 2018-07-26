@@ -1,36 +1,131 @@
 <h3>
   New Arrivals
+  <button type="button" class="btn btn-primary pull-right" routerLink="/all">VIEW ALL</button>
 </h3>
-
 <div class="row">
-    <div class="col-md-4">
-      <div class="thumbnail">
-        <a routerLink="/mens">
-          <img src="..\..\assets\images\prd-dtl-1.jpg" alt="Lights" style="width:100%">
-          <div class="caption">
-            <p>Lorem ipsum...</p>
-          </div>
-        </a>
-      </div>
-    </div>
-    <div class="col-md-4">
-      <div class="thumbnail">
-        <a routerLink="/womens">
-          <img src="..\..\assets\images\prd-dtl-2.jpg" alt="Nature" style="width:100%">
-          <div class="caption">
-            <p>Lorem ipsum...</p>
-          </div>
-        </a>
-      </div>
-    </div>
-    <div class="col-md-4">
-      <div class="thumbnail">
-        <a routerLink="/kids">
-          <img src="..\..\assets\images\prd-dtl-3.jpg" alt="Fjords" style="width:100%">
-          <div class="caption">
-            <p>Lorem ipsum...</p>
-          </div>
-        </a>
-      </div>
-    </div>
-  </div>
+<div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <div class="carousel slide" id="myCarousel">
+        <div class="carousel-inner">
+            <div class="item active">
+                    <ul class="thumbnails">
+                        <li class="col-sm-3">
+    						<div class="fff">
+								<div class="thumbnail">
+									<a href="#"><img src="../../assets/images/1000025.jpg" alt=""></a>
+								</div>
+								<div class="caption">
+									<h4>Praesent commodo</h4>
+									<p>Nullam Condimentum Nibh Etiam Sem</p>
+                  <button type="button" class="btn btn-sm btn-primary" routerLink="/product_detail/{{ product.productId }}">
+                    <span class="glyphicon glyphicon-plus-sign"></span> Add to cart
+                  </button>
+								</div>
+                            </div>
+                        </li>
+                        <li class="col-sm-3">
+							<div class="fff">
+								<div class="thumbnail">
+									<a href="#"><img src="../../assets/images/1000026.jpg" alt=""></a>
+								</div>
+								<div class="caption">
+									<h4>Praesent commodo</h4>
+									<p>Nullam Condimentum Nibh Etiam Sem</p>
+                  <button type="button" class="btn btn-sm btn-primary" routerLink="/product_detail/{{ product.productId }}">
+                    <span class="glyphicon glyphicon-plus-sign"></span> Add to cart
+                  </button>
+								</div>
+                            </div>
+                        </li>
+                        <li class="col-sm-3">
+							<div class="fff">
+								<div class="thumbnail">
+									<a href="#"><img src="../../assets/images/1000027.jpg" alt=""></a>
+								</div>
+								<div class="caption">
+									<h4>Praesent commodo</h4>
+									<p>Nullam Condimentum Nibh Etiam Sem</p>
+                  <button type="button" class="btn btn-sm btn-primary" routerLink="/product_detail/{{ product.productId }}">
+                    <span class="glyphicon glyphicon-plus-sign"></span> Add to cart
+                  </button>
+								</div>
+                            </div>
+                        </li>
+                        <li class="col-sm-3">
+							<div class="fff">
+								<div class="thumbnail">
+									<a href="#"><img src="../../assets/images/1000028.jpg" alt=""></a>
+								</div>
+								<div class="caption">
+									<h4>Praesent commodo</h4>
+									<p>Nullam Condimentum Nibh Etiam Sem</p>
+                  <button type="button" class="btn btn-sm btn-primary" routerLink="/product_detail/{{ product.productId }}">
+                    <span class="glyphicon glyphicon-plus-sign"></span> Add to cart
+                  </button>
+								</div>
+                            </div>
+                        </li>
+                    </ul>
+              </div><!-- /Slide1 --> 
+
+              <div class="item">
+                  <ul class="thumbnails">
+                      <li class="col-sm-3">
+            <div class="fff">
+              <div class="thumbnail">
+                <a href="#"><img src="../../assets/images/1000001.jpg" alt=""></a>
+              </div>
+              <div class="caption">
+                <h4>Praesent commodo</h4>
+                <p>Nullam Condimentum Nibh Etiam Sem</p>
+                <button type="button" class="btn btn-sm btn-primary" routerLink="/product_detail/{{ product.productId }}">
+                  <span class="glyphicon glyphicon-plus-sign"></span> Add to cart
+                </button>
+              </div>
+                          </div>
+                      </li>
+                      <li class="col-sm-3">
+            <div class="fff">
+              <div class="thumbnail">
+                <a href="#"><img src="../../assets/images/1000015.jpg" alt=""></a>
+              </div>
+              <div class="caption">
+                <h4>Praesent commodo</h4>
+                <p>Nullam Condimentum Nibh Etiam Sem</p>
+                <button type="button" class="btn btn-sm btn-primary" routerLink="/product_detail/{{ product.productId }}">
+                  <span class="glyphicon glyphicon-plus-sign"></span> Add to cart
+                </button>
+              </div>
+                          </div>
+                      </li>
+                      <li class="col-sm-3">
+            <div class="fff">
+              <div class="thumbnail">
+                <a href="#"><img src="../../assets/images/1000008.jpg" alt=""></a>
+              </div>
+              <div class="caption">
+                <h4>Praesent commodo</h4>
+                <p>Nullam Condimentum Nibh Etiam Sem</p>
+                <button type="button" class="btn btn-sm btn-primary" routerLink="/product_detail/{{ product.productId }}">
+                  <span class="glyphicon glyphicon-plus-sign"></span> Add to cart
+                </button>
+              </div>
+                          </div>
+                      </li>
+                      <li class="col-sm-3">
+            <div class="fff">
+              <div class="thumbnail">
+                <a href="#"><img src="../../assets/images/1000012.jpg" alt=""></a>
+              </div>
+              <div class="caption">
+                <h4>Praesent commodo</h4>
+                <p>Nullam Condimentum Nibh Etiam Sem</p>
+                <button type="button" class="btn btn-sm btn-primary" routerLink="/product_detail/{{ product.productId }}">
+                  <span class="glyphicon glyphicon-plus-sign"></span> Add to cart
+                </button>
+              </div>
+                          </div>
+                      </li>
+                  </ul>
+            </div><!-- /Slide2 --> 
+</div>
+<br>
