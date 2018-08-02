@@ -1,5 +1,6 @@
 import { Injectable } from '@angular/core';
 import { Http, Headers } from '@angular/http';
+import { environment } from '../environments/environment'
 
 import { Observable } from 'rxjs';
 import { catchError, tap } from 'rxjs/operators';
@@ -17,7 +18,7 @@ import { MessageService } from './message.service';
 export class ProductService {
 
   private productsUrl = 'api/products';  // URL to web api
-  url = 'http://localhost:9080/fashion/api';
+  url = environment.apiUrl;
   //http://localhost:9080/fashion/api/categories/5000001
   //http://localhost:9080/fashion/api/categories/5000001/products
   //http://localhost:9080/fashion/api/orders
